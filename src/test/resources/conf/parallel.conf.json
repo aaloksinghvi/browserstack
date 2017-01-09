@@ -1,0 +1,31 @@
+{
+	"server": "hub-cloud.browserstack.com",
+	"capabilities": {
+		"build": "testng-browserstack",
+		"name": "parallel_test",
+		"browserstack.debug": true
+	},
+	"environments": {
+		"chrome": {
+			"os": "Windows",
+			"os_version": "8.1",
+			"browser": "Chrome",
+			"browser_version": "54.0",
+			"resolution": "1024x768"
+		},
+		"firefox": {
+			"os": "Windows",
+			"os_version": "8.1",
+			"browser": "Firefox",
+			"browser_version": "48.0",
+			"resolution": "1024x768"
+		},
+		"ie": {
+			"os": "Windows",
+			"os_version": "8.1",
+			"browser": "IE",
+			"browser_version": "11.0",
+			"resolution": "1024x768"
+		}
+	}
+}

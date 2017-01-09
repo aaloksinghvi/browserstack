@@ -1,0 +1,18 @@
+{
+	"server": "hub-cloud.browserstack.com",
+	
+	"capabilities": {
+		"build": "testng-browserstack",
+		"name": "single_test",
+		"browserstack.debug": true
+	},
+	"environments": {
+		"chrome": {
+			"os": "Windows",
+			"os_version": "8.1",
+			"browser": "Chrome",
+			"browser_version": "54.0",
+			"resolution": "1024x768"
+		}
+	}
+}
