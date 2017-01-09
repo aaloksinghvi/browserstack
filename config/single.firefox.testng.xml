@@ -6,8 +6,7 @@
         <parameter name="environment" value="firefox"/>
         <classes>
             <class name="com.browserstack.suite.FlightSearch" />
-			<class name="com.browserstack.suite.FlightStatus" />
-			<class name="com.browserstack.suite.HotelSearch" />
+			
         </classes>
     </test>
 </suite>
