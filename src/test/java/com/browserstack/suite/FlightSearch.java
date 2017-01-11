@@ -29,7 +29,8 @@ public class FlightSearch extends BrowserStackTestNGTest {
     	driver.findElement(By.id("returnDate")).sendKeys("01/30/2017");
     	driver.findElement(By.id("findFlightsSubmit")).click();
     	
-     	WebDriverWait wait = new WebDriverWait(driver, 20);
+     	WebDriverWait wait = new WebDriverWait(driver, 30);
+     	
      	try {
      		wait.until(ExpectedConditions.elementToBeClickable(By.className("searchBtnHolder")));
      	} catch(NoSuchElementException e) {

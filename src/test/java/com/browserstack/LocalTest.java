@@ -34,7 +34,7 @@ public class LocalTest extends BrowserStackTestNGTest {
 
     	driver.findElement(By.id("findFlightsSubmit")).click();
 
-    	WebDriverWait wait = new WebDriverWait(driver, 20);
+    	WebDriverWait wait = new WebDriverWait(driver, 30);
     	try {
     		WebElement element=wait.until(ExpectedConditions.elementToBeClickable(By.className("searchBtnHolder")));
     	} catch (NoSuchElementException e) {

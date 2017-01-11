@@ -56,16 +56,13 @@ public class BrowserStackTestNGTest {
                 capabilities.setCapability(pair.getKey().toString(), pair.getValue().toString());
             }
         }
-
-       // String username = "aaloksinghvi1";
-       //String accessKey = "Wq3DbkUARJFmZx6m1qSh";
         
-        String username = System.getenv("BROWSERSTACK_USERNAME");
+        String username = null;
         if(username == null) {
             username = (String) config.get("user");
         }
 
-        String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
+        String accessKey = null;
         if(accessKey == null) {
             accessKey = (String) config.get("key");
         }
