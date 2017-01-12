@@ -33,7 +33,7 @@ public class SingleTest extends BrowserStackTestNGTest {
 
     	WebDriverWait wait = new WebDriverWait(driver, 30);
     	try {
-    		wait.until(ExpectedConditions.elementToBeClickable(By.className("searchBtnHolder")));
+    		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#FlightSearch > div.leftPanel > div.paxCountWrapper > div.searchBtnHolder > button")));
     	} catch (NoSuchElementException e) {
     		e.printStackTrace();
     	}
